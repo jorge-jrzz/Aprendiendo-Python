@@ -1,6 +1,6 @@
-# Introducción
+# **Introducción**
 
-### REPL
+## REPL
 
 REPL significa Read, Eval, Print, Loop.
 
@@ -8,7 +8,7 @@ O sea, esto vendría siendo un loop que está constantemente leyendo, evaluando 
 
 El REPL se encarga de comunicarse con el interprete.
 
-![1637E434-D124-4662-86B7-6280C89C054D.jpeg](Introduccio%CC%81n%2028cab18b19014b01946855b366903132/1637E434-D124-4662-86B7-6280C89C054D.jpeg)
+![REPL.jpeg](/Introduccion/media_Readme/REPL.jpeg)
 
 **Se utilizan para lanzar sentencias Python para ser evaluadas rápidamente;** y es una de las herramientas más potentes que tiene el lenguaje.
 
@@ -18,7 +18,7 @@ Windows → ctlr + Z + Enter
 
 MacOS → ctlr + D
 
-### Linter
+## Linter
 
 Un linter en Python es una herramienta que ayuda a los programadores a identificar y corregir errores en el código fuente de un programa, sin la necesidad de compilar o correr el programa. El término "linter" se deriva del nombre de la herramienta "lint" que fue desarrollada originalmente para C.
 
@@ -46,7 +46,7 @@ En resumen, las PEPs son documentos importantes en la comunidad de Python que ay
 
 La PEP universal es la [PEP8](https://peps.python.org/pep-0008/) y la forma de configurar el auto formato cada ves que nosotros guardemos nuestro código de Python en VS Code se encuanra en el siguiente [video.](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ae344bec-510a-4b2a-9f5e-629443b67cb9/format_PEP8.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T020422Z&X-Amz-Expires=86400&X-Amz-Signature=bca0223e839b7643eee6c7b1744762d7612a292ccb6ac809718af360ff977878&X-Amz-SignedHeaders=host&x-id=GetObject)
 
-### Ejecución de Python
+## Ejecución de Python
 
 Las **_implementaciones_** de Python son programas que toman el código escrito en Python y lo transforman en código de máquina, que puede ser interpretado por la computadora; El problema con los lenguajes de máquina es que cada lenguaje de máquina es distinto y este va a depender
 del sistema operativo y también del hardware.
@@ -57,7 +57,7 @@ Existen varias implementaciones de Python, cada una escrita en un lenguaje de pr
 
 Ejemplo de implementación de Java (Jython):
 
-![Captura de pantalla 2023-03-15 a la(s) 8.27.34 p.m..png](<Introduccio%CC%81n%2028cab18b19014b01946855b366903132/Captura_de_pantalla_2023-03-15_a_la(s)_8.27.34_p.m..png>)
+![Implementacion_Java](/Introduccion/media_Readme/Implementacion_Java.png)
 
 ---
 
