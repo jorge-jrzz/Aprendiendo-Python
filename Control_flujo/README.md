@@ -21,7 +21,7 @@ La estructura básica de una declaración **`if`** en Python es la siguiente:
 
 ```python
 if condicion: 
-		# bloque de codigo a ejecutar si la condicion es verdadera
+    # bloque de codigo a ejecutar si la condicion es verdadera
 ```
 
 Si la condición es verdadera, el bloque de código dentro del **`if`** se ejecutará. Si la condición es falsa, el bloque de código se saltará y se continuará con el resto del programa.
@@ -30,9 +30,9 @@ La estructura **`else`** se utiliza para ejecutar un bloque de código alternati
 
 ```python
 if condicion: 
-		# bloque de codigo a ejecutar si la condicion es verdadera 
+    # bloque de codigo a ejecutar si la condicion es verdadera 
 else: 
-		# bloque de codigo a ejecutar si la condicion es falsa
+    # bloque de codigo a ejecutar si la condicion es falsa
 ```
 
 Si la condición es verdadera, se ejecutará el primer bloque de código. Si la condición es falsa, se ejecutará el bloque de código después del **`else`**.
@@ -41,13 +41,13 @@ La estructura **`elif`** se utiliza para probar múltiples condiciones en orden.
 
 ```python
 if condicion1: 
-		# bloque de codigo a ejecutar si la condicion1 es verdadera 
+    # bloque de codigo a ejecutar si la condicion1 es verdadera 
 elif condicion2: 
-		# bloque de codigo a ejecutar si la condicion2 es verdadera 
+    # bloque de codigo a ejecutar si la condicion2 es verdadera 
 elif condicion3: 
-		# bloque de codigo a ejecutar si la condicion3 es verdadera 
+    # bloque de codigo a ejecutar si la condicion3 es verdadera 
 else: 
-		# bloque de codigo a ejecutar si ninguna de las condiciones es verdadera
+    # bloque de codigo a ejecutar si ninguna de las condiciones es verdadera
 ```
 
 En este ejemplo, se probarán las condiciones en orden. Si la primera condición es verdadera, se ejecutará el primer bloque de código. Si la primera condición es falsa, se probará la siguiente condición y así sucesivamente hasta que se encuentre una condición verdadera o se alcance el **`else`** final.
@@ -90,7 +90,7 @@ Los operadores lógicos son símbolos que se utilizan para combinar y comparar v
 x = 5 
 y = 10 
 if x > 0 and y > 0: 
-	print("Ambas condiciones son verdaderas")
+    print("Ambas condiciones son verdaderas")
 ```
 
 En este ejemplo, la condición **`x > 0 and y > 0`** es verdadera porque ambas variables son mayores que cero, por lo que el mensaje "Ambas condiciones son verdaderas" se imprimirá.
@@ -101,7 +101,7 @@ En este ejemplo, la condición **`x > 0 and y > 0`** es verdadera porque ambas v
 x = -1 
 y = 10 
 if x > 0 or y > 0: 
-	print("Al menos una condición es verdadera")
+    print("Al menos una condición es verdadera")
 ```
 
 En este ejemplo, la condición **`x > 0 or y > 0`** es verdadera porque **`y`** es mayor que cero, aunque **`x`** sea menor que cero. Por lo tanto, el mensaje "Al menos una condición es verdadera" se imprimirá.
@@ -111,7 +111,7 @@ En este ejemplo, la condición **`x > 0 or y > 0`** es verdadera porque **`y`** 
 ```python
 x = 5 
 if not x < 0: 
-	print("x es mayor o igual a cero")
+    print("x es mayor o igual a cero")
 ```
 
 En este ejemplo, la expresión **`x < 0`** es falsa porque **`x`** es mayor que cero. Al aplicar el operador **`not`**, la expresión se invierte y se imprime el mensaje "x es mayor o igual a cero".
@@ -130,7 +130,7 @@ En Python, los operadores de cortocircuito son **`and`** y **`or`**. Cuando se e
 x = 5 
 y = 10 
 if x > 0 and y < 0: 
-	print("Esta línea no se imprimirá")
+    print("Esta línea no se imprimirá")
 ```
 
 En este ejemplo, la primera expresión **`x > 0`** es verdadera, pero la segunda expresión **`y < 0`** es falsa. Como la expresión booleana contiene el operador **`and`**, Python no evalúa la segunda expresión, ya que el resultado final de la expresión ya se ha determinado como falso.
@@ -141,7 +141,7 @@ En este ejemplo, la primera expresión **`x > 0`** es verdadera, pero la segunda
 x = 5 
 y = 10 
 if x > 0 or y < 0: 
-	print("Esta línea se imprimirá")
+    print("Esta línea se imprimirá")
 ```
 
 En este ejemplo, la primera expresión **`x > 0`** es verdadera. Como la expresión booleana contiene el operador **`or`**, Python no evalúa la segunda expresión, ya que el resultado final de la expresión ya se ha determinado como verdadero.
@@ -157,7 +157,7 @@ Se puede encadenar a los operadores lógicos y hacer expresiones mas cortas.
 ```python
 edad = 22
 if edad >= 15 and edad <= 60:
-	print("Edad aceptada")
+    print("Edad aceptada")
 ```
 
 Esta expresión puede ser sustituida por la siguiente:
@@ -165,7 +165,7 @@ Esta expresión puede ser sustituida por la siguiente:
 ```python
 edad = 22
 if 15 <= edad <= 60:
-	print("Edad aceptada")
+    print("Edad aceptada")
 ```
 
 ## For
@@ -176,7 +176,7 @@ La sintaxis básica del bucle **`for`** en Python es la siguiente:
 
 ```python
 for variable in secuencia: 
-		# cuerpo del bucle
+    # cuerpo del bucle
 ```
 
 En esta sintaxis, **`variable`** es una variable que toma el valor de cada elemento de la secuencia en cada iteración del bucle, y **`secuencia`** es una secuencia de elementos que se va a iterar.
@@ -186,7 +186,7 @@ Por ejemplo, si queremos imprimir los elementos de una lista llamada **`mi_lista
 ```python
 mi_lista = [1, 2, 3, 4, 5] 
 for elemento in mi_lista:
-	print(elemento)
+    print(elemento)
 ```
 
 Este código imprimirá cada elemento de la lista **`mi_lista`** en una línea separada.
@@ -195,7 +195,7 @@ También es posible utilizar la función **`range()`** en un bucle **`for`** par
 
 ```python
 for i in range(1, 11): 
-	print(i)
+    print(i)
 ```
 
 En este ejemplo, la función **`range(1, 11)`** devuelve una secuencia de números del 1 al 10, que se itera utilizando el bucle **`for`**.
@@ -210,9 +210,9 @@ La sintaxis del bucle **`for-else`** es la siguiente:
 
 ```python
 for variable in secuencia: 
-	# cuerpo del bucle 
+    # cuerpo del bucle 
 else: 
-	# bloque de instrucciones a ejecutar si el bucle for se ha ejecutado completamente
+    # bloque de instrucciones a ejecutar si el bucle for se ha ejecutado completamente
 ```
 
 En este ejemplo, **`variable`** es la variable que toma el valor de cada elemento de la secuencia en cada iteración del bucle, **`secuencia`** es la secuencia que se va a iterar, y **`else`** es el bloque de instrucciones que se ejecuta después de que se agote la secuencia.
@@ -222,10 +222,10 @@ Un ejemplo de uso del bucle **`for-else`** es el siguiente:
 ```python
 mi_lista = [1, 2, 3, 4, 5] 
 for elemento in mi_lista: 
-	if elemento == 6: 
-		break 
+    if elemento == 6: 
+        break 
 else: 
-	print("La lista no contiene el número 6")
+    print("La lista no contiene el número 6")
 ```
 
 En este ejemplo, se itera sobre la lista **`mi_lista`** y se utiliza la instrucción **`break`** para salir del bucle si se encuentra el número 6 en la lista. Si se agota la lista sin encontrar el número 6, se ejecuta el bloque de instrucciones en el **`else`**, que imprime el mensaje "La lista no contiene el número 6".
