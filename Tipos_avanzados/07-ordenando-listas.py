@@ -22,13 +22,22 @@ numeros = [2, 4, 23, 67, 1, 8, 22]
 usuarios = [["Chanchito", 4], ["Felipe", 1], ["Pulga", 5]]
 print(usuarios)
 
+# ----------------------------------
+# def ordena(elemento):
+#     return elemento[1]
 
-def ordena(elemento):
-    return elemento[1]
 
+# usuarios.sort(key=ordena)
+# print(usuarios)
 
-usuarios.sort(key=ordena)
+# usuarios.sort(key=ordena, reverse=True)
+# print(usuarios)
+# --------------------------------------
+
+# Otra forma de escribir lo anterior con una expresion lambda:
+
+usuarios.sort(key=lambda el: el[1])
 print(usuarios)
 
-usuarios.sort(key=ordena, reverse=True)
+usuarios.sort(key=lambda el: el[1], reverse=True)
 print(usuarios)
