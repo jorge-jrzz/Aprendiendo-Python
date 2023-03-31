@@ -8,7 +8,7 @@ O sea, esto vendría siendo un loop que está constantemente leyendo, evaluando 
 
 El REPL se encarga de comunicarse con el interprete.
 
-![REPL.jpeg](/Introduccion/images/REPL.jpeg)
+![REPL.jpeg](/01_Introduccion/images/REPL.jpeg)
 
 **Se utilizan para lanzar sentencias Python para ser evaluadas rápidamente;** y es una de las herramientas más potentes que tiene el lenguaje.
 
@@ -57,7 +57,7 @@ Existen varias implementaciones de Python, cada una escrita en un lenguaje de pr
 
 Ejemplo de implementación de Java (Jython):
 
-![Implementacion_Java](/Introduccion/images/Implementacion_Java.png)
+![Implementacion_Java](/01_Introduccion/images/Implementacion_Java.png)
 
 ---
 
