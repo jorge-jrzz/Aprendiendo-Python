@@ -26,27 +26,29 @@ Mas opciones que tenemos con las listas son las siguientes:
 
 - Crear una lista con un rango de números:
   Para crear una lista con un rango de números en Python, puedes utilizar la función `range()` junto con el constructor de lista. Por ejemplo, si quieres crear una lista de números del 1 al 10, puedes hacer lo siguiente:
-      ```python
-      numeros = list(range(1, 11))
-      ```
-
-      Esto creará una lista llamada `numeros` que contiene los números del 1 al 10. La función `range()` acepta dos argumentos: el primer número del rango y el número final del rango, pero el último número del rango no está incluido en la lista.
+  ```python
+  numeros = list(range(1, 11))
+  ```
+  Esto creará una lista llamada `numeros` que contiene los números del 1 al 10. La función `range()` acepta dos argumentos: el primer número del rango y el número final del rango, pero el último número del rango no está incluido en la lista.
 - Concatenación de listas:
   Para concatenar dos listas en Python, puedes utilizar el operador "+". Por ejemplo, si tienes dos listas "lista1" y "lista2", puedes concatenarlas de la siguiente manera:
-      ```python
-      lista3 = lista1 + lista2
-      ```
 
-      Esto creará una nueva lista llamada "lista3" que contiene los elementos de "lista1" seguidos por los elementos de "lista2".
+  ```python
+  lista3 = lista1 + lista2
+  ```
+
+  Esto creará una nueva lista llamada "lista3" que contiene los elementos de "lista1" seguidos por los elementos de "lista2".
+
 - Crear una lista con elementos repetidos:
   Para crear una lista con elementos repetidos en Python, puedes multiplicar un elemento por el número de veces que deseas repetirlo. Por ejemplo, si deseas crear una lista con 10 ceros, puedes hacer lo siguiente:
-      ```python
-      ceros = [0] * 10
-      ```
 
-      Esto creará una lista llamada "ceros" que contiene 10 ceros. Puedes cambiar el número 10 para crear una lista con cualquier cantidad de elementos repetidos que necesites.
+  ```python
+  ceros = [0] * 10
+  ```
 
-### Manipulando listas
+  Esto creará una lista llamada "ceros" que contiene 10 ceros. Puedes cambiar el número 10 para crear una lista con cualquier cantidad de elementos repetidos que necesites.
+
+### **Manipulando listas**
 
 Considerando el siguiente código:
 
@@ -70,13 +72,13 @@ La parte específica de la lista que se imprime se define utilizando la sintaxis
 
 Por lo tanto, la línea de código `print(numeros[::2])` imprimirá una lista que contiene los números pares del 0 al 20, ya que estamos seleccionando cada segundo elemento de la lista comenzando desde el primer elemento, que es el número 0. La salida será:
 
-```
+```python
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 ```
 
 En el caso de la linea de código `print(numeros[1::2]` imprimirá una lista que contiene los números impares del 1 al 20, ya que estamos seleccionando cada segundo elemento de la lista comenzando desde el primer elemento, que es el número 1. La salida será:
 
-```
+```python
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 ```
 
@@ -239,6 +241,7 @@ Después de estos cambios, la lista resultante sería: **`[0, 2, 4, 5, 6, 7, 8, 
 En Python, las listas se pueden ordenar fácilmente utilizando la función **`sorted()`** o el método **`sort()`**.
 
 - La función **`sorted()`** devuelve una nueva lista ordenada a partir de la lista original, sin modificar la lista original. Por ejemplo:
+
   ```python
   # Creamos una lista desordenada
   mi_lista = [5, 2, 8, 1, 3]
@@ -250,7 +253,9 @@ En Python, las listas se pueden ordenar fácilmente utilizando la función **`so
   print(mi_lista)  # [5, 2, 8, 1, 3]
   print(mi_lista_ordenada)  # [1, 2, 3, 5, 8]
   ```
+
 - El método **`sort()`**, por otro lado, ordena la lista original en su lugar, es decir, modifica la lista original sin crear una nueva. Por ejemplo:
+
   ```python
   # Creamos una lista desordenada
   mi_lista = [5, 2, 8, 1, 3]
@@ -415,9 +420,7 @@ print(primer - segundo)  # Diferencia
 print(primer ^ segundo)  # Diferencia simetrica
 ```
 
-En donde `**primer**` y `**segundo**` son sets.
-
-Los sets son mutables, lo que significa que se pueden agregar y eliminar elementos utilizando los métodos **`add()`** y **`remove()`**, respectivamente.
+En donde `**primer**` y `**segundo**` son sets. Los sets son mutables, lo que significa que se pueden agregar y eliminar elementos utilizando los métodos **`add()`** y **`remove()`**, respectivamente.
 
 ```python
 mi_set = {1, 2, 3}
@@ -480,7 +483,7 @@ En este ejemplo, se crea un diccionario **`person`** con tres claves **`name`**,
 En resumen, el operador de desempaquetamiento en Python permite descomponer una estructura de datos en sus elementos individuales. Se utiliza con frecuencia con tuplas y listas, y se puede utilizar en combinación con el operador **`*`**
 para desempaquetar una parte de una estructura de datos y asignar el resto a una variable individual-
 
-## **Filas o colas**
+## Filas o colas
 
 Las colas o filas, o también conocidas como queue, son una estructura de datos que se caracterizan por ser del tipo **_FIFO_** (First In, First Out), es decir, el primer elemento en ser ingresado a la cola es el primero en ser eliminado.
 
