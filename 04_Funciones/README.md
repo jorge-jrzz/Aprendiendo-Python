@@ -23,7 +23,7 @@ En este ejemplo, se llama a la función **`suma`** con los argumentos **`2`** y 
 
 Las funciones pueden tener múltiples parámetros y múltiples argumentos. Los parámetros se separan por comas en la definición de la función, y los argumentos se separan por comas al llamar a la función.
 
-![Ejemplo para diferenciar los parámetros de los argumentos. ](/Funciones/images/Argumento_vs_parametro.png)
+![Ejemplo para diferenciar los parámetros de los argumentos. ](/04_Funciones/images/Argumento_vs_parametro.png)
 
 Ejemplo para diferenciar los parámetros de los argumentos.
 
@@ -124,6 +124,7 @@ El alcance de una función en Python se refiere a la accesibilidad y visibilidad
 Es importante tener en cuenta que las variables globales pueden ser accedidas dentro de una función, pero si se intenta modificar una variable global dentro de una función, se creará una nueva variable local con el mismo nombre en su lugar. Para evitar esto, se debe utilizar la palabra clave **`global`** seguida del nombre de la variable para indicar que se está haciendo referencia a la variable global y no creando una nueva variable local.
 
 - Ejemplo:
+
   ```python
   x = 5
 
@@ -135,6 +136,7 @@ Es importante tener en cuenta que las variables globales pueden ser accedidas de
   modificar_x()
   print("Después de llamar a la función, x es igual a", x)
   ```
+
   En este ejemplo, se tiene una variable global **`x`** con un valor inicial de 5. La función **`modificar_x()`** utiliza la palabra reservada **`global`** para indicar que se está haciendo referencia a la variable global **`x`**. Luego, dentro de la función, se modifica el valor de **`x`** a 10.
   Cuando se llama a la función **`modificar_x()`**, se imprime el valor de **`x`** antes y después de la llamada a la función. Antes de llamar a la función, **`x`** es igual a 5, pero después de llamar a la función, **`x`** es igual a 10. Esto demuestra que la variable global **`x`** se ha modificado desde dentro de la función utilizando la palabra reservada **`global`**.
 
