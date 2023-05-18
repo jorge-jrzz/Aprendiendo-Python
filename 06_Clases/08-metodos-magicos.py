@@ -3,6 +3,9 @@ class Perro:
         self.nombre = nombre
         self.edad = edad
 
+    def __del__(self):
+        print(f"Chau Perro {self.nombre}")
+
     def __str__(self):
         return f"Clase Perro: {self.nombre}"
 
@@ -12,5 +15,5 @@ class Perro:
 
 perro = Perro("chanchito", 4)
 print(perro)
-texto = str(perro)
-print(texto)
+del perro
+# print(perro)    # Error
