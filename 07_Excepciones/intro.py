@@ -1,4 +1,4 @@
 try:
     n1 = int(input("Ingresa primer numero: "))
-except:
-    print("Ocurrio un Error")
+except Exception as e:
+    print(type(e))
